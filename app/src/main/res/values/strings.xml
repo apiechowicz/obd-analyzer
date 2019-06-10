@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">OBD Analyzer</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="toggle_bluetooth">Bluetooth</string>
+    <string name="bluetooth_enabled">enabled</string>
+    <string name="bluetooth_disabled">disabled</string>
+    <string name="paired_devices">Paired devices:</string>
+    <string name="log_button1">log 1</string>
+    <string name="log_button2">log 2</string>
+    <string name="log_button3">log 3</string>
+    <string name="device_text">%s (%s)</string>
+    <string name="speed_text">Speed:</string>
+    <string name="rpm_text">RPM:</string>
+    <string name="load_text">Engine load:</string>
+    <string name="no_data_text">NODATA</string>
+</resources>

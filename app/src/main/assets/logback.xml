@@ -1,0 +1,33 @@
+<configuration>
+    <property name="LOG_DIR" value="${EXT_DIR:-/storage/emulated/0}/obd_analyzer/logs"/>
+
+    <appender name="logcat" class="ch.qos.logback.classic.android.LogcatAppender">
+        <tagEncoder>
+            <pattern>%logger{12}</pattern>
+        </tagEncoder>
+        <encoder>
+            <pattern>%d %-5level [%thread] %msg</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="dailyRollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/odb_analyzer.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <fileNamePattern>${LOG_DIR}/%d{yyyy-MM-dd--HH}_%i.log.zip</fileNamePattern>
+            <!-- keep up to 30 days (30 * 24) of history -->
+            <maxHistory>30</maxHistory>
+            <maxFileSize>1MB</maxFileSize>
+            <totalSizeCap>100MB</totalSizeCap>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{35} - %msg %n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="logcat"/>
+        <appender-ref ref="dailyRollingFile"/>
+    </root>
+</configuration>
