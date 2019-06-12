@@ -42,4 +42,4 @@ Aplikacja wyświetla na ekranie zmierzone parametry oraz loguje je do pliku. Uż
 
 Przyciski LOG 1, 2, 3 służą dodatkowo do logowania informacji o ich wciśnięciu w danym momencie. Przyciski LOG mogą zostać użyte do tworzenia zakładek w pliku z zebranymi danymi z OBD w celu oznaczenia interesujących momentów jazdy.
 
-Działanie aplikacji można zobaczyć na zamieszczonym filmiku: https://www.youtube.com/watch?v=nyZY-t37okM
+Działanie aplikacji można zobaczyć na zamieszczonym filmiku: https://www.youtube.com/watch?v=nyZY-t37okM.
